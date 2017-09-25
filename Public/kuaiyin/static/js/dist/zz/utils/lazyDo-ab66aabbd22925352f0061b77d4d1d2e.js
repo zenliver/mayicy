@@ -1,0 +1,1 @@
+define("zz/utils/lazyDo",[],function(){"use strict";function a(a,b){b=b||1500;var c,d=(new Date).getTime(),e=function(){var e=(new Date).getTime(),f=Array.prototype.slice.call(arguments),g=g||this;c&&clearTimeout(c),e-d>b?(c=null,a.apply(g,f),d=e):c=setTimeout(function(){a.apply(g,f),d=e},b)};return e}return a});

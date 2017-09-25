@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*
+	name:login.css
+	author:M.X
+	date:2015/06/15
+	frame-basic:self
+*/
+/*public end*/
+/*modle end*/
+/*login*/
+#login{background:url(../images/publicBg.jpg.png)/*tpa=http://www.mayicy.cn/Public/Home/images/publicBg.jpg*/ center 0 no-repeat}
+#formLogin{float: right;margin-top: 87px;width: 330px;padding:25px 42px 0 52px;font-weight: normal;color: #6b6b6b;background-color: #fff;}
+.loginThrid{border-top: 1px solid #ededed;margin: 0 -42px 0 -52px;padding:10px 42px 30px 52px;}
+.loginThrid li{margin-right: 30px;}
+#login .m-fInput{width: 300px;}
+#login .m-fLegend{margin-bottom:7px;}
+#login .b2{margin-top: -4px;}
+#formLogin .m-fError{left:auto;top:1px;right:4px;line-height:46px;padding:0 5px;}
+/*login end*/
+/*sign*/
+#sign,#forget{padding-bottom: 72px;margin-top:40px;padding-top: 50px;border: 1px solid #e2e2e2;background-color: #fff;}
+#formSign{margin-left: 38px;}
+#formSign .m-fLegend{font-size: 1.785714285714286em;margin-bottom: 60px;}
+#formSign .m-fItem .b3{margin-left: 10px;}
+#sideBlock{position: absolute;right: 90px;top:150px;text-align: center;}
+#sideBlock p{margin-bottom: 10px;}
+/*sign end*/
+/*login-l*/
+#layer-form{margin:20px 40px;border-top: 0 none;color: #666;background-color: #fff;padding:60px;}
+#layer-form form{float: left;padding: 0;margin: 0;}
+#layer-form form .m-fInput{width:92%;}
+#layer-form #formSign .m-fInput{width:60%;}
+#layer-form #formSign .telCode .m-fInput{width:20%;}
+#layer-form .m-fLegend{margin: 0;font-size: 1.2em;margin: -10px 0 10px;}
+#layer-form #formSign .m-fLabel{margin-right: 10px;}
+#layer-form #formSign .g-ml137{margin-left: 115px;}
+#layer-form #transmit{text-align:center;}
+#layer-form #formSign #transmit{width:86%;}
+#layer-form .loginThrid{margin:0 40px 0 120px;padding: 0;border-top: 0 none;font-size: 16px;color: #666;}
+#layer-form .loginThrid a{margin-top: 15px;}
+.bqq{background-color: #F2675A;color: #fff;text-align: center;border-radius: 3px}
+.bsina{background-color: #44afe5;color: #fff;text-align: center;border-radius: 3px}
+#layer-form #formSign .m-fError{left:auto;top:1px;right:45px;line-height:46px;padding:0 5px;}
+/*login-l end*/
+/*flown*/
+#forget .m-fLegend{margin-bottom: 10px;}
+#forgetBox{width: 500px;}
+.forget-statu{text-align: center;}
+.forget-statu .u-i,.forget-statu .m-fTips02{margin:10px auto;}
+#flown{width: 985px;text-align: center;padding-bottom: 65px;margin-bottom: 80px;}
+.flown-i{height: 15px;width:24%;border-bottom: 2px solid #e4e3e3;}
+.flown-i code{margin: 0 auto;display: block;width: 30px;height: 30px;line-height: 30px;font-size:1.142857142857143em;margin-bottom: 10px;border-radius:50%;background-color: #d6d6d6;color: #808080;}
+.flown-i p{font-size: 1.142857142857143em;color: #808080;}
+.flown-act{border-bottom: 2px solid #f40;}
+.flown-act code{background-color: #f40;color: #fff;}
+.flown-act p{color: #f40;}
+/*flown end*/
+/*user*/
+.flown-t{border: 1px solid #fff;color: #fff;}
+/*user end*/
+#cart{background-color: #fff;padding-bottom: 30px;}
+.cart-t{line-height: 70px;font-weight: normal;font-size:1.571428571428571em;color:#666;text-indent:20px;}
+.cart-c{width: 100%;border-top: 1px solid #dcdcdc;}
+.cart-c th{background-color: #f7f7f7;font-size:1.142857142857143em;color: #919191;line-height: 42px;padding-left: 22px;}
+.cart-c td{color: #6d6d6d;font-size: 1.285714285714286em;border-bottom: 1px solid #eee;padding:33px 0 28px 22px;}
+.col01{width:47.08%;}
+.col02{width:18.16%;}
+.col03{width:11.6%;}
+.col04{width:14.583%;}
+.col05{width:8.6%;}
+.cart-c .service {padding-left:197px;}
+.service img{float: left;display: inline-block;margin-left: -175px;height:102px;width:152px;}
+.service h3{font-size:1.571428571428571em;line-height: 1.8;font-weight:normal;color: #525252;}
+.service p{font-size:12px;}
+#invoice{padding:40px 50px;}
+.price{font-weight: normal;color: #f00;}
+#invoice{color: #666;}
+.invoice-t{font-size:1.142857142857143em;font-weight: normal;margin-bottom: 10px;}
+.check02-t{position: relative;left: 0;top: 0;z-index: 10;cursor: pointer;float: left;display: inline-block;margin-right: 20px;font-size: 0.86em;font-weight: normal;line-height: 28px;padding: 0 20px;border: 1px solid #ebebeb;}
+.check02-t:hover{border: 1px solid #52bef4;}
+.check02-h .tab-act{border: 1px solid #18a1e6;box-shadow: 0 0 1px 0 #18a1e6}
+.check02-t .u-i{position: absolute;bottom:-1px;right:-1px;z-index: 12;display:none;}
+.tab-act .u-i{display: block;}
+.check02-h{margin-bottom: 18px;}
+.check02-b{line-height: 22px;}
+#os-submit,#os-submit input{line-height: 40px;}
+#os-submit input{padding: 0 40px;}
+.totalPrice{color: #f14b4b;font-size:18px;}
+/* 2015-12-23 */
+.g-w400{width:400px;}
+.g-pb37{padding-bottom:37px;}
+.g-pb20{padding-bottom:20px;}
+.g-pt5{padding-top:5px;}
+.loginPublicHeader{padding:93px 0 26px 0;}
+.loginPublicHeader img{display:block; margin:0 auto;}
+.loginPublicHeader p{font:24px/26px "Microsoft YaHei"; color:#aabde2; text-align:center; padding-top:15px;}
+#formLogin{padding:45px 36px; margin:0; border-radius:5px;}
+.m-foperate{padding:5px 0 30px 0;}
+.m-foperate{font-size:12px;}
+#login #min-footer{font:14px/18px "Microsoft YaHei"; color:#ffffff; margin-top:125px;}
+/* 2015-12-23 end */
+
+
+/*20170726修改 by zenliver*/
+#layer-form .loginThrid {
+    margin: 0 40px 0 100px;
+}

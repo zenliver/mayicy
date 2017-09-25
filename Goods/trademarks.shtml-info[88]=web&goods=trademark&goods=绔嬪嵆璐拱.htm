@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>跳转提示</title>
+        <style type="text/css">
+            body,p,h1,a,section{margin: 0;padding: 0;border:0 none;}
+            body{background-color: #eaeaea;}
+            a{color:#7495AB;padding: 0 5px;}
+            .f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+            .f-cb{clear:both;*zoom:1;}
+            .tips{width:60% ; float:left; margin:10% auto 0; margin-left:15.4%; padding:3%  5%;border-bottom: 10px solid #2DC3E8;font-family:\5fae\8f6f\96c5\9ed1,\534e\6587\7ec6\9ed1,\5b8b\4f53;color: #666;box-shadow: 0 1px 3px #aaa;background-color: #fff;}
+            .tips-t{font-size:2rem;margin-bottom:3.5%;}
+            .tips-p{margin:0 0 5%;text-indent: 2em;}
+            .tips-c{float: right;border-left: 10px solid #ccc;padding:0.5% 1%;background-color: #eee;}
+            .tips-suc .tips-t{color: #61B320;}
+            .tips-err .tips-t{color: #E46E60;}
+
+        </style>
+        <!--使浏览器兼容html5标签-->
+<script> 
+   (function() {
+     if (! 
+     /*@cc_on!@*/
+     0) return;
+     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+     var i= e.length;
+     while (i--){
+         document.createElement(e[i])
+     } 
+})() 
+</script>
+<!--页面强制使用浏览器!-->
+<!–[if lt IE 8]>
+
+<script
+
+src=%22”http-/ie7-js.googlecode.com/svn/version/2.0(beta)/IE8.js”.js%22 tppabs="http://www.mayicy.cn/goods/”http://ie7-js.googlecode.com/svn/version/2.0(beta)/IE8.js”" type=”text/javascript”></script>
+
+<![endif]–>
+    </head>
+    <body>
+
+                    <section class="tips tips-err f-cb">
+		<h1 class="tips-t">失败</h1>
+                <h1 class="tips-t">请选择套餐！</h1>                 
+                <p  class="tips-p f-cb"></p>
+                <p class="tips-c">如果页面没有自动跳转 <a id="href" href="javascript:history.back(-1);">请猛戳...</a> 当前等待时间： <b id="wait">3</b></p>
+
+            </section>
+        <script type="text/javascript">
+            (function () {
+                var wait = document.getElementById('wait'), href = document.getElementById('href').href;
+                var interval = setInterval(function () {
+                    var time = --wait.innerHTML;
+                    if (time <= 0) {
+                        location.href = href;
+                        clearInterval(interval);
+                    }
+                    ;
+                }, 1000);
+            })();
+        </script>
+    </body>
+</html>

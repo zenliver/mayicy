@@ -1,0 +1,18 @@
+/*cakes*/
+h1{font-size:40px; color:#3c3c3c; font-family:'微软雅黑'; line-height:110px; text-align:center;}
+.cakes{ background:#FFF;overflow:hidden; padding-bottom:75px;}
+.product{ width:1280px; margin:0 auto;}
+.product ul{ clear:both;}
+.product li{ float:left; width:300px; height:370px; border:1px solid #ececec; background:#FFF; margin-left:24px;}
+.product li.move{}
+.product li.move1{background:url(../../images/io.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/io.jpg*/ no-repeat right top;}
+.product h2{ font-size:30px; line-height:40px; color:#3c3c3c; text-align:center; font-weight:300; margin-top:30px;}
+.product p{ text-align:center;}
+.product p.lead{font-size:18px; color:#575757;}
+.product p.rmb{font-size:30px; color:#ff6861; margin-top:20px;}
+.product p.rmb span{font-size:20px;}
+.product img{ margin:0 auto; vertical-align: bottom;}
+.product a{text-decoration: none;}
+.xie{ margin:0  auto; width:1280px; font-size:14xp; padding:15px 0;}
+.xie a.dd{ color:#999999;}
+/*cakes end*/

@@ -1,0 +1,1 @@
+define("common/logout",["jquery/jquery/1.7.2/jquery"],function(a,b){"use strict";var c=a("jquery/jquery/1.7.2/jquery");b.logout=function(){c.get("/ajax/logout").done(function(a){a&&200===a.code&&(location.href="https://login."+global.zbj_domain+"/login/DoLogout?fromurl=http://kuaiyin."+global.zbj_domain)})}});

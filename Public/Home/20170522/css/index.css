@@ -1,0 +1,131 @@
+
+#nav a{line-height:40px;}
+/*slide*/
+#slide{width: 100%;height:400px;}
+#slideTip{display: none;position: relative;top: 0;z-index:50;width:1200px;margin: 0 auto;height:500px;background:url(../demo/demo01.png)/*tpa=http://www.mayicy.cn/Public/Home/20170522/demo/demo01.png*/ center 192px no-repeat;}
+/*slide*/
+#mar3Nav {position: absolute;bottom:15px;left:0;z-index: 55;width: 100%;text-align: center;}
+#mar3Nav li {cursor: pointer;display: inline-block;width:20px;height:20px;line-height:20px;margin: 0 9px;text-align: center;color: #fff;overflow: hidden;background:#fff;+display: inline;border-radius: 50%}
+#mar3Nav li.navOn {background:#18a1e6;color: #18a1e6;}
+#mar3Nav li.on {background:#18a1e6;color: #18a1e6;}
+#imgNav {position: absolute;bottom: 42px;left:0;z-index: 55;width: 100%;text-align: center;}
+#imgNav li {cursor: pointer;display: inline-block;width:20px;height:20px;line-height:20px;margin: 0 9px;text-align: center;color: #fff;overflow: hidden;background:#fff;+display: inline;border-radius: 50%}
+#imgNav li.navOn {background:#18a1e6;color: #18a1e6;}
+#slideA{height:400px;}
+.slide-i{height:400px;background-position: center 0;background-repeat: no-repeat;}
+.slide{position:relative;left:0;top:0;z-index:15;width:100%;}
+.slide ul li,.slide ul li a{display: block;width: 100%;height: 100%;}
+/*slide end*/
+.b_inquire{ width:1280px; height:110px; margin:0 auto; background:url(../../images/s_bg.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/s_bg.jpg*/ no-repeat left top; border-bottom:2px solid #18a1e6;}
+.rm{width:1280px; display:inline-block; line-height:50px; text-align:center;}
+.rm a{ font-size:16px; color:#696969; margin-right:40px;}
+.search{ margin:22px 0;}
+.b_inquire input{ float:left;}
+.b_inquire form{ padding-left:250px;}
+.b_inquire .enter{ width:630px; height:30px; border:1px solid #d0d0d0; padding:5px; font-size:16px;}
+.b_inquire .click{ width:135px; height:42px; background:#ff6861; text-align:center; font-size:16px; color:#FFF; border:none;}
+/*cakes*/
+h1{font-size:40px; color:#3c3c3c; font-family:'微软雅黑'; line-height:110px; text-align:center; margin-top:20px;}
+.cakes{ background:#f4f4f4; overflow:hidden; padding-bottom:75px;}
+.product{ width:1280px; margin:0 auto;}
+.product ul{ clear:both;}
+.product li{ float:left; width:300px; height:370px; border:1px solid #ececec; background:#FFF;}
+.product li.move{ margin-left:24px;}
+.product a{text-decoration: none;}
+.product h2{ font-size:30px; line-height:40px; color:#3c3c3c; text-align:center; font-weight:300; margin-top:30px;}
+.product p{ text-align:center;}
+.product p.lead{font-size:18px; color:#575757;}
+.product p.rmb{font-size:30px; color:#ff6861; margin-top:20px;}
+.product p.rmb span{font-size:20px;}
+.product img{ margin:0 auto;}
+/*cakes end*/
+/*registered*/
+.registered{ background:#617fa5; overflow:hidden;}
+.company{ margin:0 auto; width:1280px;}
+.title{ float:left; width:440px;}
+.title h2{ background:url(../../images/title.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/title.jpg*/ no-repeat left top; width:360px; height:100px; margin:40px 0 12px 40px;}
+.title p{ font-size:25px; color:#FFF; text-align:center; line-height:40px; margin-bottom:30px;}
+.title a{ font-size:20px; border:2px solid #FFF; width:210px; height:40px; color:#FFF; display:inline-block; text-align:center; padding-top:5px; margin-left:115px;}
+.com_right{ float:right; margin:37px 0;}
+.com_right li{ float:left; width:405px; height:230px; background:#FFF; margin-left:15px;}
+.com_right li h2{ font-size:30px; text-align:center; line-height:50px; color:#696969; margin-top:30px;}
+.com_right li p.le{ font-size:20px; text-align:center;}
+.com_right li p.many{ font-size:22px; color:#ff5a00; text-align:center; margin-top:15px;}
+.com_right li p.many span{ font-size:16px;}
+.com_right li a{ display:inline-block; font-size:18px; width:105px; height:36px; text-align:center; border:1px solid #ff5a00; border-radius:5px; color:#ff5a00; margin-left:150px;}
+/*registered end*/
+/*mark*/
+.trade{ width:1280px; margin:0 auto;}
+.mark{ margin-bottom:75px;}
+.trade ul{ overflow:hidden;}
+.trade li{ width:380px; height:345px; background:#f4f4f4; float:left;}
+.trade li.bus_1{ margin-right:70px;}
+.trade a{text-decoration: none;}
+.trade li h2{ text-align:center;font-size:26px; color:#3c3c3c; line-height:35px; padding-top:50px;}
+.trade li img{ margin:20px auto 10px;}
+.trade li p{ text-align:center;}
+.trade li p.many{ font-size:20px; color:#fe4545;}
+.trade li p.many span{ font-size:28px; font-weight:bold;}
+/*mark end*/
+.property{ background:#f4f4f4; overflow:hidden; padding-bottom:75px;}
+.intell{ width:1280px; margin:0 auto;}
+.intell li{ float:left; width:375px; height:170px; background:#FFFFFF; margin:0 15px 15px 0; padding:50px 0 0 40px}
+.intell a{text-decoration: none;}
+.intell li.software{ width:795px; background: #FFFFFF url(../../images/img2.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/img2.jpg*/ no-repeat right bottom;}
+.intell li.img1{background: #FFFFFF url(../../images/img1.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/img1.jpg*/ no-repeat right bottom;}
+.intell li.img2{background: #FFFFFF url(../../images/img3.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/img3.jpg*/ no-repeat right bottom;}
+.intell li.img3{background: #FFFFFF url(../../images/img5.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/img5.jpg*/ no-repeat right bottom;}
+.intell li.img4{background: #FFFFFF url(../../images/img6.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/img6.jpg*/ no-repeat right bottom;}
+.intell li h2{ font-size:20px; color:#3c3c3c; line-height:30px;}
+.intell li p.tiy{ font-size:14px; color:#696969; line-height:30px; margin-bottom:50px;}
+.intell li p.many{ font-size:16px; color:#ff5a00;}
+.intell li p.many span{ font-size:20px; font-weight:bold;}
+
+.anser{ width:1280px; margin:0 auto;}
+.an_left{ float:left; width:840px;}
+.anser h3{ font-size:14px; color:#656565; margin-bottom:12px;}
+.an_left ul{ width:840px; overflow:hidden;}
+.an_left ul li{ float:left;  line-height:40px; padding:5px 25px; font-size:16px;}
+.an_left ul li.frist{ background:#45a6fe; color:#FFFFFF;}
+.quesMsgBox{ border:1px solid #c8c7c7; padding-top:15px; height:350px;overflow: auto;}
+.channelIscor{ width:780px; margin:0 auto;}
+.quesMsges dl{ font-size:14px; margin-top:15px;}
+.quesMsges dl dt{ color:#555555; padding-left:50px; background:url(../../images/ico1.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/ico1.jpg*/ no-repeat left top; line-height:30px; margin-bottom:6px;}
+.quesMsges dl dd{ color:#7c7c7c; padding-left:50px; background:url(../../images/ico2.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/ico2.jpg*/ no-repeat left top;}
+.an_right{ float:right; width:390px;}
+.an_right ul li{ padding-left:15px; background:url(../../images/ico3.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/ico3.jpg*/ no-repeat left 17px; line-height:36px; color:#656565;}
+.an_right  p.lab{ margin-top:25px;}
+.an_right  p.lab span{ font-size:14px; color:#656565;}
+.an_right  p.lab a{ display:inline-block; padding:0 10px;height:26px; color:#00aeff; border:2px solid #00aeff; margin-left:10px; border-radius:50px;}
+.an_right  p.pl{ margin-top:25px;}
+
+.pater{ background:#f4f4f4; overflow:hidden; padding-bottom:65px;}
+.peration{ width:1280px; margin:0 auto;}
+.ans_big{ overflow:hidden; margin-bottom:75px;}
+.peration a{ float:left; width:295px; height:110px; margin:30px 30px 0 0;}
+.peration a.coffee{ background:#FFF url(../../images/index_link1_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link1_hover.png*/ no-repeat left top;}
+.peration a.space{ background:#FFF url(../../images/index_link2_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link2_hover.png*/ no-repeat left top;}
+.peration a.know{ background:#FFF url(../../images/index_link3_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link3_hover.png*/ no-repeat left top;}
+.peration a.loft{ background:#FFF url(../../images/index_link4_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link4_hover.png*/ no-repeat left top;margin-right:0;}
+.peration a.capital{ background:#FFF url(../../images/index_link5_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link5_hover.png*/ no-repeat left top;}
+.peration a.guest{ background:#FFF url(../../images/index_link6_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link6_hover.png*/ no-repeat left top;}
+.peration a.broad{ background:#FFF url(../../images/index_link7_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link7_hover.png*/ no-repeat left top;}
+.peration a.network{ background:#FFF url(../../images/index_link8_hover.png)/*tpa=http://www.mayicy.cn/Public/Home/images/index_link8_hover.png*/ no-repeat left top;margin-right:0;}
+
+.servIndex_t{ width:1280px; margin:0 auto;}
+.servIndex_t{padding:22px 0 40px 0;}
+.servIndex_t section{float:left; text-align:center; width:146px;}
+.servIndex_t section strong{font-family:"微软雅黑"; font-weight:normal; color:#18a1e6; font-size:44px; display:block; height:57px;}
+.servIndex_t section strong em{font-size:16px; display:inline-block; color:#999999; font-weight:normal; font-family:"微软雅黑"; vertical-align:2px;}
+.servIndex_t section span{display:block; font-size:18px; color:#999999; font-family:"微软雅黑"; letter-spacing:10px;}
+.servIndex_t .sevrIndex_t_1{width:140px; margin-left:103px; margin-right:292px;}
+.servIndex_t .sevrIndex_t_1 strong{text-align:left; text-indent:7px;}
+.servIndex_t .sevrIndex_t_1 span{letter-spacing:13px;}
+.servIndex_t .sevrIndex_t_2 strong{letter-spacing:2px;}
+.servIndex_t .sevrIndex_t_3 span{letter-spacing:3px;}
+.servIndex_t .sevrIndex_t_3{float:right; margin-right:128px;}
+.channelIscor{margin-bottom: 30px;}
+.g-w1200{width:1280px;}
+.g-wm1200 {
+    min-width: 1280px;
+}

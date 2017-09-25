@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>第一站创业-用户中心-弹出层登录</title>
+        <meta name="keywords" content="第一站创业" />
+        <meta name="description" content="第一站创业" />
+        <!-- public -->
+        <link rel="stylesheet" type="text/css" href="/Public/Home/css/basic.css" />
+        <!-- public end -->
+        <!-- private -->
+        <link rel="stylesheet" type="text/css" href="/Public/Home/css/login.css" />
+        <!-- private end -->
+        <!--[if IE]>
+                <script src="/Public/Home/plugins/html5.js"></script>
+        <![endif]-->
+        <!--[if IE 6]>
+                <script type="text/javascript" src="/Public/Home/plugins/DD_belatedPNG.js"></script>
+                <script>
+                  DD_belatedPNG.fix('*');  //class="png_bg"
+                </script>
+        <![endif]-->
+    </head>
+    <style>
+    #layer-form{padding-top: 0;}
+    #layer-form .loginThrid{margin-top: 0;}
+</style>
+    <body id="layer-form" class="f-cb">
+        <!-- content -->
+        <form action="/Public/layer_logins.shtml" method="post" id="formLogin">
+            <!-- <h2 class="m-fLegend">登录第一站创业</h2> -->
+            <ul>
+                <li class="m-fItem">
+                    <input type="text" id='phone' placeholder="请输入手机号" class="m-fInput" name="phone">
+                    <p for="phone" class="m-fError"></p>
+                </li>
+                <li class="m-fItem">
+                    <input type="password" id='password' placeholder="请输入密码" class="m-fInput" name="password" />
+                    <p for="password" class="m-fError"></p>
+                </li>
+                <li class="m-fItem">
+                    <label for="" class="m-fChb"><input type="checkbox" name="" id="" checked>下次自动登录</label>
+                    <a href="javascript:void(0);" id="J_forgetPwd"  class="f-fr">忘记密码?</a>
+                </li>
+                <li class="m-fItem">
+                    <!--<input id="submit" type="submit" value="登录" class="u-b b1">-->
+                    <a id='transmit' class="u-b b1">登录</a>
+                </li>
+            </ul>
+        </form>
+        <aside class="loginThrid f-fl">
+            <div>
+                <p>还没有第一站创业账号？</p>
+                <a href="#"  id="closeIframe" class="u-b b3">马上注册</a>
+            </div>
+        </aside>
+        <!-- content end -->
+        <!-- foot end -->
+        <!-- public -->
+        <script type="text/javascript" src="/Public/Home/plugins/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/Public/Home/plugins/layer/layer.js"></script>
+        <!-- public end -->
+        <!-- private -->
+        <script type="text/javascript" src="/Public/Home/plugins/jquery.validate.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+
+                $("#formLogin").validate({
+                    errorPlacement: function (error, element) {
+                        $(element).closest("form").find("p[for='" + element.attr("name") + "']").append(error);
+                    },
+                    errorElement: "span",
+                    rules: {
+                        password: {
+                            required: true
+                        },
+                        phone: {
+                            required: true,
+                            phones: true
+                        }
+                    },
+                    messages: {
+                        password: {
+                            required: '请输入密码'
+                        },
+                        phone: {
+                            required: '请输入用户名',
+                            phones: '请输入正确的手机号码'
+                        }
+                    }
+                });
+
+                var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+
+                $('#closeIframe').click(function(){
+                    //重新给指定层设定width、top等
+                    parent.layer.style(index, {
+                        width: '1046px',
+                        height:'540px'
+                    });
+                    parent.layer.title('快速注册第一站创业', index);
+                    parent.layer.iframeSrc(index, '/Public/ajax/layer_sign.html');
+                });
+
+                $('#transmit').on('click', function () {
+                    var phone = $('#phone').val();
+                    var password = $('#password').val();
+                    //var captcha = $('#captcha').val();
+                    var captcha = 123;
+                    if (!phone) {
+                        layer.open({content: '用户名不能为空'});
+                        return FALSE;
+                    }
+                    if (!password) {
+                        layer.open({content: '密码不能为空'});
+                        return FALSE;
+                    }
+                    /*
+                    if (!captcha) {
+                        layer.open({content: '验证码不能为空'});
+                        return FALSE;
+                    }
+                    */
+                    $.ajax({
+                        type: "POST", url: "/index.php/Home/Public/layer_logins", dataType: "json", data: 'phone=' + phone + '&password=' + password + '&captcha=' + captcha, success: function (data) {
+                            if (data.state > 0) {
+                                parent.layer.close(index);
+                            } else {
+                                parent.layer.msg(data.msg, {shade: 0.3})
+                            }
+                        }
+                    });
+                });
+                $('#J_forgetPwd').on('click',function(){
+                    parent.location.href="/Public/forgetpass.shtml";
+                    parent.layer.close(index);
+                   // parent.window.location
+
+                });
+            });
+        </script>
+        <!-- private end -->
+    </body>
+</html>

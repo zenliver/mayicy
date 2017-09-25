@@ -1,0 +1,1 @@
+<p class="welcome">欢迎您，15018008382！<a href="/Public/quit.shtml.htm">[退出]</a><a href="/User/index.shtml.htm">用户中心</a> <a href="/Cart/index.shtml.htm">购物车</a></p>

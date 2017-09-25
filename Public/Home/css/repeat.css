@@ -1,0 +1,23 @@
+#repeat-top{background:url(../images/repeat-bg.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/repeat-bg.jpg*/ no-repeat; width:; height:393px;}
+.input-1{width:182px;}
+.input-2{width:300px;}
+.repeat-Title{font:30px/30px "Microsoft Yahei"; color:#1d1d1d; display:block; text-align:center; padding:95px 0 50px 0;}
+.repeat-search{background:url(../images/re-opacity.png)/*tpa=http://www.mayicy.cn/Public/Home/images/re-opacity.png*/ repeat; padding:10px 0 10px 12px;}
+.input-text{float:left; margin-right:21px; border:1px solid #d4d4d4; background:ffffff; font:18px/18px "Microsoft Yahei"; padding:16px 0 16px 15px; color:#3c3c3c;}
+.input-select{float:left; cursor:pointer; position:relative; border:1px solid #d4d4d4; background:ffffff; height:58px; padding-left:11px;  font:18px/58px "Microsoft Yahei"; color:#3c3c3c; width:446px;}
+#select-icon{background:url(../images/select-icon.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/select-icon.jpg*/ no-repeat; width:13px; height:58px; position:absolute; right:0; top:1px;}
+.input-btn{float:left; width:134px; margin-left:29px; height:58px; text-align:center; font:18px/58px "Microsoft Yahei"; border:none; background:#ff6600; cursor:pointer; color:#ffffff;}
+.input-btn:hover{background:#d65a08;}
+.repeat-intro{background:#f3f1f2; text-align:center; padding-bottom:35px;}
+.repeat-intro h2{font:30px/30px "Microsoft Yahei"; color:#000000; padding:50px 0 16px 0;}
+.repeat-intro p{font:20px/30px "Microsoft Yahei"; color:#000000;}
+.repeat-result{margin-top:14px;}
+.repeat-result i{background:url(../images/repeat.png)/*tpa=http://www.mayicy.cn/Public/Home/images/repeat.png*/ no-repeat; width:41px; height:41px; display:inline-block; vertical-align:-14px; margin-right:10px;}
+.repeat-result a{color:#f4523a; font:18px/18px "Microsoft Yahei";}
+.repeat-result .more-act i{background:url(../images/repeat.png)/*tpa=http://www.mayicy.cn/Public/Home/images/repeat.png*/ no-repeat 0 -44px;}
+.repeat-result a:hover{text-decoration:none;}
+.repeat-cent{background:#f7fafa; display:none;}
+.repeat-cent-t{padding:70px 0 65px 0;}
+.result-box{border:3px solid #e2e2e2; width:692px; padding:30px 15px 0 10px; margin:0 auto;}
+.result-box h3{font:26px/30px "Microsoft Yahei"; color:#30485c; position:absolute; left:262px; top:-20px; background:#f7fafa; padding:0 20px;}
+.result-list li{overflow:hidden; border-bottom:1px solid #e2e2e2; font:20px/46px "simsun"; color:#4a4a4a; text-align:center;}

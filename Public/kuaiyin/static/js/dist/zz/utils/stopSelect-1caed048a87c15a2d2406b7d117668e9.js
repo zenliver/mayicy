@@ -1,0 +1,1 @@
+define("zz/utils/stopSelect",["jquery/jquery/1.7.2/jquery"],function(a,b){var c=a("jquery/jquery/1.7.2/jquery");b.init=function(){var a=["input","textarea","select","object","embed"];a=a.join("|"),c(document).on("mousedown",function(b){return-1==a.indexOf(b.target.tagName.toLowerCase())?!1:void 0}),c(document).on("mouseup",function(){return!0})}});

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>第一站创业-登录</title>
+    <meta name="keywords" content="第一站创业" />
+    <meta name="description" content="第一站创业" />
+    <!-- public -->
+    <link rel="stylesheet" type="text/css" href="Home/css/basic.css" tppabs="http://www.mayicy.cn/Public/Home/css/basic.css" />
+    <!-- public end -->
+    <!--[if IE]>
+    <script src="Home/plugins/html5.js" tppabs="http://www.mayicy.cn/Public/Home/plugins/html5.js"></script>
+    <![endif]-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="Home/plugins/DD_belatedPNG.js" tppabs="http://www.mayicy.cn/Public/Home/plugins/DD_belatedPNG.js"></script>
+    <script>
+        DD_belatedPNG.fix('*');  //class="png_bg"
+    </script>
+    <![endif]-->
+    <!-- private -->
+    <link rel="stylesheet" type="text/css" href="Home/css/login.css" tppabs="http://www.mayicy.cn/Public/Home/css/login.css" />
+    <!-- private end -->
+</head>
+<body style="padding:0;background-color: #2667c3;">
+
+<section id="login" class="g-wm1090">
+    <div class="g-w400 g-wrap f-cb">
+        <div class="loginPublicHeader f-cb">
+            <a href="../index.htm" tppabs="http://www.mayicy.cn/"><img src="Home/images/login-logo.png" tppabs="http://www.mayicy.cn/Public/Home/images/login-logo.png" /></a>
+            <p>小微企业全生命周期服务</p>
+        </div>
+        <form action="/Public/logins.html" method="post" id="formLogin">
+            <ul>
+                <li class="m-fItem">
+                    <input type="text" placeholder="请输入手机号" class="m-fInput" name="phone">
+                    <p for="phone" class="m-fError"></p>
+                </li>
+                <li class="m-fItem">
+                    <input type="password" placeholder="请输入密码" class="m-fInput" name="password" />
+                    <p for="password" class="m-fError"></p>
+                </li>
+                <li class="m-fItem g-pb20 g-pt5">
+                    <label for="" class="m-fChb"><input type="checkbox" name="" id="" checked>下次自动登录</label>
+                </li>
+                <li class="m-fItem">
+                    <input id="submit" type="submit" value="登录" class="u-b b1">
+                </li>
+                <li class="f-tar m-fItem m-foperate" style="padding-bottom:10px; padding-top:5px;">
+                    <a href="forgetpass.shtml.htm" tppabs="http://www.mayicy.cn/Public/forgetpass.shtml" class="f-fl">忘记密码</a>
+                    <a href="reg.shtml.htm" tppabs="http://www.mayicy.cn/Public/reg.shtml" class="f-fr">马上注册</a>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!-- foot start -->
+    <footer id="min-footer" class="g-wm1090 f-tac">
+        <!-- footer copyright -->
+        <p>版权所有 © 2017 粤ICP备xxxxxx号 | 公司地址：中山市西区彩虹大道11号美银国际1幢704室</p>
+        <!-- footer copyright end -->
+    </footer>
+    <!-- foot end -->
+</section>  
+<!-- public -->
+<script type="text/javascript" src="Home/plugins/jquery-1.11.1.min.js" tppabs="http://www.mayicy.cn/Public/Home/plugins/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="Home/plugins/layer/layer.js" tppabs="http://www.mayicy.cn/Public/Home/plugins/layer/layer.js"></script>
+<!-- public end -->
+<!-- private -->
+<script type="text/javascript" src="Home/plugins/jquery.validate.min.js" tppabs="http://www.mayicy.cn/Public/Home/plugins/jquery.validate.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        jQuery.validator.addMethod("phones", function(value, element) {
+            var length = value.length;
+            var mobile = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/
+            return this.optional(element) || (length == 11 && mobile.test(value));
+        }, "手机号码格式错误");
+
+        $("#formLogin").validate({
+            errorPlacement: function(error, element) {
+                $( element ).closest( "form" ).find( "p[for='" + element.attr( "name" ) + "']" ).append( error );
+            },
+            errorElement: "span",
+            rules:{
+                password: {
+                    required: true
+                },
+                phone: {
+                    required: true,
+                    phones: true
+                }
+            },
+            messages:{
+                password: {
+                    required: '请输入密码'
+                },
+                phone: {
+                    required: '请输入手机号码',
+                    phones:'请输入正确的手机号码'
+                }
+            }
+        });
+
+    })
+</script>
+<!-- private end -->
+<!-- private -->
+<script type="text/javascript" src="Home/plugins/jquery.validate.min.js" tppabs="http://www.mayicy.cn/Public/Home/plugins/jquery.validate.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //设置validator手机号码验证规范
+        jQuery.validator.addMethod("phones", function (value, element) {
+            var length = value.length;
+            var mobile = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/;
+            return this.optional(element) || (length == 11);
+        }, "手机号码格式错误");
+
+        //表单验证
+        $("#formLogin").validate({
+            errorPlacement: function (error, element) {
+                $(element).closest("form").find("p[for='" + element.attr("name") + "']").append(error);
+            },
+            errorElement: "span",
+            rules: {
+                password: {
+                    required: true
+                },
+                phone: {
+                    required: true,
+                    phones: true
+                }
+            },
+            messages: {
+                password: {
+                    required: '请输入密码'
+                },
+                phone: {
+                    required: '请输入用户名',
+                    phones: '请输入正确的手机号码'
+                }
+            }
+        });
+    });
+</script>
+<!-- private end -->
+</body>
+</html>

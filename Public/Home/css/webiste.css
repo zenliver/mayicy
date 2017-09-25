@@ -1,0 +1,25 @@
+#wz_banner{background:url(../images/wz_banner.jpg)/*tpa=http://www.mayicy.cn/Public/Home/images/wz_banner.jpg*/ no-repeat center center; width:100%; height:609px; }
+.wz_title h2{font:30px/30px "Microsoft Yahei"; color:#020202; text-align:center; margin-bottom:12px;}
+.wz_title p{font:16px/30px "Microsoft Yahei"; color:#666666; text-align:center;}
+#wz_box1 .wz_title{padding:60px 0 25px 0;}
+.wz_case{margin-right:-30px;}
+.wz_case li{float:left; width:380px; margin-bottom:18px; margin-right:30px;}
+.wz_case li h3{font:16px/30px "Microsoft Yahei"; display:block; text-align:center;}
+.wz_case li h3 a{color:#282828; padding:12px 0; display:block;}
+.wz_case li h3 a:hover{color:#102b73;}
+.wz_links{border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
+.wz_links a{float:left; border:1px solid #e5e5e5; border-bottom:none; border-right:none;}
+.wz_links a:hover{opacity:0.8;}
+#wz_box2 .wz_title{padding:45px 0 25px 0;}
+#wz_box3{padding-bottom:45px}
+#wz_box3 .wz_title{padding:80px 0 30px 0;}
+.wz_phone{font:bold 40px/40px "Microsoft Yahei"; color:#8c8c8c; text-align:center;}
+.wz_contact{font:15px/15px "Microsoft Yahei"; color:#616161; width:344px; margin:0 auto; padding:15px 0;}
+.wz_ewm{display:block; margin:0 auto;}
+
+
+
+/*20170717修改 by zenliver*/
+.wz_links.f-cb>a>img {
+    width: 238.8px;
+}
